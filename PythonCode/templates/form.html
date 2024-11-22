@@ -1,0 +1,69 @@
+<html>
+<head>
+    <link href="{{ url_for('static', filename='css/back.css') }}" rel="stylesheet" type="text/css">
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <h1 class="mt-100" style="font-size:80px">Select Room</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Bedroom</h2>
+                        <form class="form" method="post" action="/selection_1" >
+                            <label>Select</label><br>
+                            <input type="radio" name="ubed" value="uvalue"><br>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Confirm">
+                        </form>
+                        <h2>Kitchen</h2>
+                        <form class="form" method="post" action="/selection_2">
+                            <label>Select</label><br>
+                            <input type="radio" name="ukit" value="uvalue1"><br>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Confirm">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
